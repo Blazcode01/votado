@@ -30,8 +30,8 @@ def generate_ballot(display_controls=False):
         candidates = Candidate.objects.filter(position=position)
         for candidate in candidates:
             if position.max_vote > 1:
-                instruction = "You may select up to " + \
-                    str(position.max_vote) + " candidates"
+                instruction = "Seleccione su candidato" + \
+                    str(Position) + "."
                 input_box = '<input type="checkbox" value="'+str(candidate.id)+'" class="flat-red ' + \
                     position_name+'" name="' + \
                     position_name+"[]" + '">'

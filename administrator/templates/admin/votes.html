@@ -10,7 +10,7 @@
 <div class="box-body">
   <table id="example1" class="table table-bordered table-hover table-striped">
       <thead style="background-color: #222D32; color:white;">
-          <th>Nombre del votante</th>
+          <th>N. votante</th>
           <th>Candidato votado + Partido</th>
           <th>Posición</th>
       </thead>
@@ -18,7 +18,7 @@
     {% for vote in votes %}
       
     <tr>
-      <td>{{ vote.voter }}</td>
+      <td>{{ vote.id }}</td>
       <td>{{ vote.candidate }}</td>
       <td>{{ vote.position }}</td>
       
